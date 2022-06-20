@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
+
+:root{
+    --underline: 1px solid black;
+    --name-margin-left: -75%;
+}
+
+body {
+    background-image: url('../image/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    padding-top: 2.5em;
+    font-size: 26pt;
+    font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.whisky, .empty-whisky, .inkpen, .page {
+    filter: drop-shadow(15px 15px 5px var(--shadow));
+}
+
+.pages {
+    display: flex;
+    width: auto;
+    flex-basis : 65%;
+}
+
+.page {
+    height:65vh;
+    padding: 3vw;
+    width: 50%;
+    background-blend-mode: multiply;
+}
+
+.leftpage {
+    background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+    border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+}
+
+.rightpage {
+    background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+    border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
+    overflow: auto;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.index {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../image/paper.png');
+    font-family: serif;
+    font-size: 20pt;
+    padding: 20px;
+    margin-bottom: 2em;
+}
+
+.index a {
+    text-decoration: none;
+    color: grey;
+}
+
+.index a:hover {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+.desktop{
+    display: flex;
+    justify-content: center;
+}
+
+.pen {
+    display: flex;
+    align-items: flex-end;
+}
+
+.titleForm {
+    font-size: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.2em;
+}
+
+label {
+    font-size: 0.9em;
+    margin-bottom: 0.1em;
+}
+
+input {
+    margin-bottom: 1em;
+    width: 90%;
+    padding: 0.6em;
+    border-radius: 0.4em;
+    border: none;
+    margin-left: 1em;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    width: 40px;
+    margin-left: 1em;
+    padding: 0.5em;
+    border-radius: 0.4em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+}
+
+tbody, thead, tfoot {
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+td, th {
+    padding: 5px 10px;
+}
+
+.underline-top {
+    text-align: right;
+    width: 100%;
+    border-top: var(--underline);
+}
+
+.empty-whisky {
+    display: none;
+}
+
+.titleLetter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-top: 0.3em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.2em;
+}
+
+@media screen and (max-width: 1200px) {
+    .inkpen{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .whisky {
+        display: none;
+    }
+
+    .empty-whisky{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .empty-whisky{
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
+
+    .index {
+        margin-bottom: 0.3em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pages {
+        flex-direction: column-reverse;
+        width: 75vw;
+    }
+
+    .page {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .index {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .left {
+        margin-left: calc(var(--name-margin-left) / 10%);
+    }
+    
+    .left-foot {
+        margin-left: calc(var(--name-margin-left)-40%);
+    }
+}
