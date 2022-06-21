@@ -11,7 +11,7 @@ class Formulary
             if (!in_array($input, $inputs)) {
                 $this->errors[] = 'Eh eh the field ' . $input . ' does not exist';
             } elseif (empty($inputValue)) {
-                $this->errors[] = 'The field must' . $input . ' not be empty';
+                $this->errors[] = 'The field ' . $input . ' must not be empty';
             } elseif ($input === 'payment' && !empty($inputValue) && $inputValue <= 0) {
                 $this->errors[] = 'Payment must be greater than 0';
             }
