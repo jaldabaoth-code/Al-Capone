@@ -1,4 +1,4 @@
-<h1>Al Capone (PHP Checkpoint 1, WCS)</h1>
+<h1>Al Capone (PHP Checkpoint 1, WCS Web PHP)</h1>
 
 ### The goal is to create "Al Capone's Secret Bribe Book"
 
