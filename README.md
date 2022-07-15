@@ -9,7 +9,7 @@
 
 * To run the checkpoint, you have to create a <b>connec.php</b> file at the root of the project (you can use <b>connec.php.dist</b> as a model)
 * Create a database with the name you used in <b>connec.php</b> file : `create database database_name;`
-* Import <b>dataV1.sql</b> file (at the root of the project) in your SQL server
+* Import the last version of the <b>dataVx.sql</b> (at the root of the project) in your SQL server
 * Launch the PHP internal server with `php -S localhost:8000 -t public`
 * Follow the instructions on the home page carefully.
 * Commit your changes on a branch named as **CAMPUS_NOM_Prenom** *(i.e. NANTES_LEGUENEC_Erwan)*
