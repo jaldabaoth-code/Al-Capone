@@ -7,7 +7,7 @@
 
 ### Steps
 
-0. Clone the repo from Github : `git clone git@github.com:jaldabaoth-code/Al-Capone.git`
+0. Clone the repo from GitHub : `git clone git@github.com:jaldabaoth-code/Al-Capone.git`
 0. Enter the directory : `cd Al-Capone`
 0. Create a <b>connec.php</b> file at the root of the project (you can use <b>connec.php.dist</b> as a model)
 0. Create a database with the name you used in <b>connec.php</b> file : `create database database_name;`
