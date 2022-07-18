@@ -5,14 +5,15 @@
 
 ---
 
-## PHP checkpoint 1
+### Steps
 
-* To run the checkpoint, you have to create a <b>connec.php</b> file at the root of the project (you can use <b>connec.php.dist</b> as a model)
-* Create a database with the name you used in <b>connec.php</b> file : `create database database_name;`
-* Import the last version of the <b>dataVx.sql</b> file (at the root of the project) in your SQL server
-* Launch the PHP internal server with `php -S localhost:8000 -t public`
-* Follow the instructions on the home page carefully.
-* Commit your changes on a branch named as **CAMPUS_NOM_Prenom** *(i.e. NANTES_LEGUENEC_Erwan)*
+0. Clone the repo from Github : `git clone git@github.com:jaldabaoth-code/Al-Capone.git`
+0. Enter the directory : `cd Al-Capone`
+0. Create a <b>connec.php</b> file at the root of the project (you can use <b>connec.php.dist</b> as a model)
+0. Create a database with the name you used in <b>connec.php</b> file : `create database database_name;`
+0. Import the last version of the <b>dataVx.sql</b> file (at the root of the project) in your SQL server
+0. Launch the PHP internal server with `php -S localhost:8000 -t public`
+0. Go to <b>localhost:8000</b> with your favorite browser
 
 ---
 

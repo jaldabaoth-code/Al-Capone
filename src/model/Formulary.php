@@ -24,7 +24,7 @@ class Formulary
 
     public function validateLetter(string $letter): bool
     {
-        if(!in_array($letter, range('A', 'Z'))) {
+        if (!in_array($letter, range('A', 'Z'))) {
             header('location: /book.php');
             exit('The search must be a letter');
         }

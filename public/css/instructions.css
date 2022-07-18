@@ -113,7 +113,7 @@
 
 @keyframes pageSlide {
     50% {
-        left:calc(20px + 60%);
+        left: calc(20px + 60%);
     }
 
     100% {

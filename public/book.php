@@ -14,7 +14,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('location: /book.php');
     }
 }
-
 if (isset($_GET['letter'])) {
     $letters = trim($_GET['letter']);
     $letters = $letters;
@@ -24,7 +23,6 @@ if (isset($_GET['letter'])) {
     }
 }
 ?>
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -62,7 +60,6 @@ if (isset($_GET['letter'])) {
                             <div>
                                 <label for="name">Name</label>
                                 <input type="text" id="name" name="name" >
-
                                 <label for="payment">Payment</label>
                                 <input type="number" id="payment" name="payment" >
                             </div>
